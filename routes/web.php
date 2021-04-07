@@ -25,5 +25,4 @@ Route::group(['middleware' => ['auth', 'dontback']], function() {
     Route::resource('dashboard/roles', App\Http\Controllers\Role\RoleController::class);
     Route::resource('dashboard/permissions', App\Http\Controllers\Role\PermissionsController::class);
     Route::resource('dashboard/users', App\Http\Controllers\User\UserController::class);
-    Route::resource('dashboard/products', App\Http\Controllers\ProductController::class);
 });

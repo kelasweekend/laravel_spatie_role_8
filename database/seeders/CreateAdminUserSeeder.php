@@ -19,7 +19,7 @@ class CreateAdminUserSeeder extends Seeder
         $user = User::create([
             'name' => 'Ojan', 
             'email' => 'admin@admin.com',
-            'password' => bcrypt('masfauzan')
+            'password' => bcrypt('fauzan123')
         ]);
         $role = Role::create(['name' => 'Admin']);
         $permissions = Permission::pluck('id','id')->all();
@@ -29,7 +29,7 @@ class CreateAdminUserSeeder extends Seeder
         $guest =  User::create([
             'name' => 'Guest', 
             'email' => 'guets@admin.com',
-            'password' => bcrypt('masfauzan')
+            'password' => bcrypt('fauzan123')
         ]);
         $role_guest = Role::create(['name' => 'Guest']);
         $permissions_guest = Permission::create(['name' => 'view-only']);
